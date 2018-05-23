@@ -31,18 +31,41 @@
 
         }
 
+        .navbar-light .navbar-nav .nav-link {
+            color: #333333;
+            font-weight: bold;
+            margin-left: 0px;
+        }
+
+        .navbar-expand .navbar-nav .nav-link {
+            padding-left: 0;
+        }
+
+        .btn-primary {
+            background-color: #6288A5;
+            border: none;
+            font-family: "cheltenham";
+            font-style: normal;
+        }
+
+        .btn-primary:hover {
+            background-color: #326891;
+
+        }
+
         .icon {
             margin-top: 9px;
         }
 
-       
+
 
         .menu {
             font-size: 12px;
             margin-top: 10px;
+            color: #333333;
         }
 
-         .search {
+        .search {
             margin-left: 10px;
             margin-top: 13px;
         }
@@ -50,19 +73,26 @@
         .logo {
             width: 200px;
             position: absolute;
-            left: 45%;
+            left: 40%;
 
         }
 
-        .login, .subscribe {
+        .login,
+        .subscribe {
             position: absolute;
             margin-top: 10px;
             font-size: 12px;
+            text-transform: uppercase;
+            font-family: "cheltenham" !important;
+        }
+
+        .btn {
+            font-family: "sans-serif";
         }
 
         .subscribe {
             right: 10%;
-        
+
         }
 
         .login {
@@ -86,6 +116,9 @@
 
         .headline {
             margin-top: 50px;
+            font-family: "nyt-franklin", arial, helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 3em;
         }
 
         .tabs {
@@ -113,7 +146,7 @@
             color: #333333;
             font-family: "Arial";
             text-transform: uppercase;
-            font-size: 12px;
+            font-size: 11px;
 
         }
 
@@ -122,22 +155,75 @@
             text-decoration: underline;
         }
 
-        .cards {
+        .card {
+            border: none;
+
+        }
+
+        .card-body {
+            padding-left: 0;
+        }
+
+        .card-title {
+            font-size: 21px;
+            line-height: 22px;
+            font-weight: bold;
+            margin-top: 5px;
+            color: black;
+        }
+
+        .card-title:hover {
+            color: black;
+        }
+
+        .card-text {
+            margin-top: 5px;
+            line-height: 20px;
+            font-size: 16px;
+        }
+
+        .author {
+            color: grey;
+            font-size: 12px;
+            margin-top: -10px;
+        }
+
+        .last-card {
+            margin-top: 10px;
+        }
+
+        .line-two {
+            padding: .5px;
+            background-color: grey;
+            height: 20px;
+            margin-top: 5px;
+
+        }
+
+        .line-bottom {
             margin-top: 20px;
-
+            padding: .5px;
+            background-color:  lightgrey;
+            margin-bottom: 50px;
+            opacity: 20;
         }
 
-        img .cards {
-            height: 20%;
+        .card-border {
+            border-right: rgba(0, 0, 0, 0.5) .5px solid;
+            margin-top: 20px;
+            opacity: 20;
         }
+
+
     </style>
 </head>
 
 <body>
     <div class="container">
         <nav class="navbar navbar-expand navbar-light">
-            <div  id="navbarText">
+            <div id="navbarText">
                 <ul class="navbar-nav mr-auto">
+
                     <li>
                         <image class="icon" src="http://www.priviamedicalgroup.com/wp-content/uploads/2016/06/NYTIMES.png" />
                     </li>
@@ -146,6 +232,7 @@
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
+
                     <li>
                         <img class="search menu" src="http://www.endlessicons.com/wp-content/uploads/2015/08/search-icon-2-614x460.png" />
                     </li>
@@ -191,19 +278,56 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Dealbook
-                            <span class="sr-only">(current)</span>
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dealbook</a>
+                    </li>
+                    <li>
+                        <div class="line-two"></div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Markets</a>
                     </li>
+                    <li>
+                        <div class="line-two"></div>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Economy</a>
                     </li>
+                    <li>
+                        <div class="line-two"></div>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Energy</a>
+                    </li>
+                    <li>
+                        <div class="line-two"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Media</a>
+                    </li>
+                    <li>
+                        <div class="line-two"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Technology</a>
+                    </li>
+                    <li>
+                        <div class="line-two"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Personal Tech</a>
+                    </li>
+                    <li>
+                        <div class="line-two"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entrepreneurship</a>
+                    </li>
+                    <li>
+                        <div class="line-two"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Your Money</a>
                     </li>
                 </ul>
             </div>
@@ -216,49 +340,53 @@
 
     <div class="container cards">
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 card-border">
                 <div class="card" style="">
-                    <img class="card-img-top" src="https://static01.nyt.com/images/2018/05/17/business/17Techfix-silo/merlin_138192162_c6852b52-fc13-4628-8f6d-525b02d37e01-superJumbo.jpg?quality=90&auto=webp"
+                    <img class="card-img-top" src="https://static01.nyt.com/images/2018/05/23/business/23AMAZON/23AMAZON-videoLarge.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <a href="#" class="card-title">Amazon Pushes Facial Recognition to Police. Critics See Surveillance Risk.</a>
+                        <p class="card-text">More than two dozen civil rights organizations asked the tech giant to stop selling its image recognition
+                            system to law enforcement agencies.
+
+                        </p>
+                        <p class="author">
+                            11h ago · By NICK WINGFIELD
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 card-border">
+                <div class="card" style="">
+                    <img class="card-img-top" src="https://static01.nyt.com/images/2018/05/22/business/EUFACEBOOK/EUFACEBOOK-videoLarge.jpg"
                         alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="card-title">Facebook’s Mark Zuckerberg Gets an Earful From the E.U.</a>
+                        <p class="card-text">The chief executive had initially resisted meeting with European authorities, who have emerged as
+                            the world’s most assertive watchdog of the technology industry.</p>
+                        <p class="author">8h ago By ADAM SATARIANO and MILAN SCHREUER</p>
                     </div>
                 </div>
             </div>
             <div class="col-3">
                 <div class="card" style="">
-                    <img class="card-img-top" src="https://static01.nyt.com/images/2018/05/17/business/17Roose.print/17Roose.print-jumbo.gif?quality=90&auto=webp"
-                        alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="card-title">U.K. vs. U.S.: How Much of Your Personal Data Can You Get?</a>
+                        <p class="card-text">We decided to test how easy it soon might be for people in Europe to access their personal data compared
+                            with users in the United States.</p>
+                        <p href="#" class="author">2d ago By NATASHA SINGER and PRASHANT S. RAO</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-3">
-                <div class="card" style="">
+                <div class="card last-card" style="">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                    </div>
-                </div>
-                <div class="card" style="">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <a href="#" class="card-title">Tesla Model 3 Goes Upscale, and Base-Price Buyers Must Wait</a>
+                        <p class="card-text">Elon Musk, the electric-car company’s chief, said Tesla would lose money and die if it began selling
+                            the cheapest version of its mass-market car too soon.</p>
+                        <p class="author"> By NEAL E. BOUDETTE May 22, 2018</a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row line-bottom"></div>
     </div>
 
     <!-- Optional JavaScript -->
